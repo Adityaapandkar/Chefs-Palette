@@ -8,10 +8,10 @@ With this chatbot, you can ask for recipes, get ingredient substitutions, learn 
 
 ## Features
 
-- *Model Selection*: Users can select between mixtral-8x7b-32768, llama2-70b-4096, Gemma-7b-it, llama2-70b-4096, llama3-70b-8192, and lama3-8b-8192 models to tailor the conversation according to each model's capabilities.
-- *Dynamic Response Generation*: Utilizes a generator function to stream responses from the Groq API, providing a seamless chat experience.
-- *Error Handling*: Implements try-except blocks to handle potential errors gracefully during API calls.
-- *Recipe Searching and Filtering*: Utilizes Spoonacular API for recipes and ingredients for fast and seamless searching of recipes.
+- _Model Selection_: Users can select between mixtral-8x7b-32768, llama2-70b-4096, Gemma-7b-it, llama2-70b-4096, llama3-70b-8192, and lama3-8b-8192 models to tailor the conversation according to each model's capabilities.
+- _Dynamic Response Generation_: Utilizes a generator function to stream responses from the Groq API, providing a seamless chat experience.
+- _Error Handling_: Implements try-except blocks to handle potential errors gracefully during API calls.
+- _Recipe Searching and Filtering_: Utilizes Spoonacular API for recipes and ingredients for fast and seamless searching of recipes.
 
 ## Requirements
 
@@ -22,34 +22,30 @@ With this chatbot, you can ask for recipes, get ingredient substitutions, learn 
 
 ## Setup and Installation
 
-- *Clone the Repository*:
+- _Clone the Repository_:
 
   bash
   git clone https://github.com/Adityaapandkar/Chefs-Palette
-  
 
-- *Install Dependencies*:
+- _Install Dependencies_:
 
   bash
   pip install -r requirements.txt
-  
 
-- *Set Up Groq API Key and Spoonacular API Key*:
+- _Set Up Groq API Key and Spoonacular API Key_:
 
   Ensure you have an API key from Groq. This key should be stored securely using Streamlit's secrets management:
 
   toml
-  # .streamlit/secrets.toml
+  .streamlit/secrets.toml
   GROQ_API_KEY="your_api_key_here"
   SPOONACULAR_API_KEY = "your_api_key_here"
-  
 
-- *Run the App*:
+- _Run the App_:
   Navigate to the app's directory and run:
 
 bash
 streamlit run app.py
-
 
 ## Usage
 
